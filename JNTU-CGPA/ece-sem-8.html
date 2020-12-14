@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>ece-sem-8</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="BOOTSTRAP/css/bootstrap.min.css">
+        <script type="text/javascript" src="JQUERY/jquery.js"></script>
+        <script  type="text/javascript" src="BOOTSTRAP/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="">
+        <style type="text/css">
+        *{
+        box-sizing: border-box;
+        }
+        html{
+        font-family:sans-serif;
+        font-size:15px;
+        }
+        h1,h2,h3,h4,h5,h6{
+        }
+        #template{
+        font-family:serif;
+  1      font-style:normal;
+        font-weight: normal;
+        background-color:#b2f297;
+        color:#136e0d;
+        border:5px solid black;
+        }
+        #row0{
+        background-color:orange;
+        color: black;
+        }
+        .row{
+        
+        }
+        .col,.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,
+        .col-7,.col-8,.col-9,.col-10,.col-11,.col-12{
+        border: 1px solid black;
+        padding-top: 8px;
+        text-align: center;
+        }
+        .col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,
+        .col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12{
+        border: 1px solid black;
+        padding-top: 8px;
+        text-align: center;
+        }
+        .pe{
+            background-color:#61b864; 
+        }
+        #cgpa{
+        background-color:#7c0303;
+        }
+        #inputdiv{
+        border: none;
+        }
+        @media (min-width:400px) and (max-width:575px){
+        #h1{
+        font-size:30px;
+        font-style: italic;
+        font-weight:bold;
+        }
+        #template{
+        font-family:serif;
+        font-size:10px;
+        }
+        #row0{
+        font-family: arial;
+        font-size:10px;
+        }
+        .row{
+        line-height:1rem;
+        }
+        .col-2,.col-3,.col-4,.col-6{
+        padding-top:10px;
+        text-align:center;
+        }
+        }
+        @media (min-width:300px) and (max-width:399px){
+        #h1{
+        color:black;
+        font-size:25px;
+        font-style: italic;
+        font-weight:bold;
+        }
+        #template{
+        font-family:sans-serif;
+        font-size:10px;
+        text-transform:uppercase;
+        }
+        #row0{
+        font-family:arial;
+        font-size:10px;
+        }    
+        .row{
+        line-height:1rem;
+        }
+        .col-2,.col-3,.col-4,.col-6{
+        padding-top:10px;
+        text-align:center;
+        }
+        }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a href="homepage.html" class="navbar-brand">ECE@SEMESTER-LIST</a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#list">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse"  id="list">
+                    <ul class="navbar-nav text-center ml-auto">
+                        <li class="nav-item"><a href="ece-sem-1.html" class="nav-link">SEM1</a></li>
+                        <li class="nav-item"><a href="ece-sem-2.html" class="nav-link">SEM2</a></li>
+                        <li class="nav-item"><a href="ece-sem-3.html" class="nav-link">SEM3</a></li>
+                        <li class="nav-item"><a href="ece-sem-4.html" class="nav-link">SEM4</a></li>
+                        <li class="nav-item"><a href="ece-sem-5.html" class="nav-link">SEM5</a></li>
+                        <li class="nav-item"><a href="ece-sem-6.html" class="nav-link">SEM6</a></li>
+                        <li class="nav-item"><a href="ece-sem-7.html" class="nav-link">SEM7</a></li>
+                        <li class="nav-item"><a href="ece-sem-8.html" class="nav-link">SEM8</a></li>
+                        
+                    </ul> 
+                </div>
+            </div>
+        </nav>
+        <h4 class="text-center text-danger display-4" id="h1">ECE SEM-8/(4-2)</h4>
+        <div class="container" id="template">
+            <div class="row" id="row0">
+                <div class="col-sm-2 col-3 ">CODE</div>
+                <div class="col-sm-6 col-5 ">SUBJECT NAME</div>
+                <div class="col-sm-2 col-2 pl-0">CREDITS</div>
+                <div class="col-sm-2 col-2">GRADE</div>
+            </div>
+            <div class="row " id="row1">
+                <div class="col-sm-2 col-3">*****</div>
+                <div class="col-sm-6 col-5">Open Elective-3</div>
+                <div class="col-sm-2 col-2">3</div>
+                <div class="col-sm-2 col-2 p-0">
+                    <select class="form-control rounded-0 badge-light" id="l1">
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C</option>
+                        <option value="0">F</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row" id="row2">
+                <div class="col-sm-2 col-3">*****</div>
+                <div class="col-sm-6 col-5 p-0 ">
+                     <select class="form-control rounded-0 pe" >
+                        <option>PE-5</option>
+                        <option>ANN and Fuzzy System</option>
+                        <option>Electrical Distribution Systems</option>
+                        <option>Wind,Solar, and Hybrid Energy Systems</option>
+                        <option>High Voltage Engineering</option>
+
+                    </select>
+                </div>
+                <div class="col-sm-2 col-2">3</div>
+                <div class="col-sm-2 col-2 p-0">
+                    <select class="form-control rounded-0 badge-light" id="l2">
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C</option>
+                        <option value="0">F</option>
+                    </select>
+                    
+                </div>
+            </div>
+            <div class="row" id="row3">
+                <div class="col-sm-2 col-3">*****</div>
+                <div class="col-sm-6 col-5 p-0"> 
+                    <select class="form-control rounded-0 pe" >
+                        <option>PE-6</option>
+                        <option>VLSI Design</option>
+                        <option>Smart Electrical Grid</option>
+                        <option>Utilization Of Electric Power</option>
+                        <option>Electric and Hybrid Vehicles</option>
+                    </select>
+                </div>
+                <div class="col-sm-2 col-2">3</div>
+                <div class="col-sm-2 col-2 p-0">
+                    <select class="form-control rounded-0 badge-light" id="l3">
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C</option>
+                        <option value="0">F</option>
+                    </select>   
+                </div>
+            </div>
+            <div class="row" id="row4">
+                <div class="col-sm-2 col-3">EE801PC</div>
+                <div class="col-sm-6 col-5">Major Project</div>
+                <div class="col-sm-2 col-2">15</div>
+                <div class="col-sm-2 col-2 p-0">
+                    <select class="form-control rounded-0 badge-light" id="l4">
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C</option>
+                        <option value="0">F</option>
+                    </select>
+                    
+                </div>
+            </div>
+        </div>
+        <br><!--calculator codes ends here-->
+        <div class="container border-0" >
+            <div class="row" >
+                <div class="col-8 p-0 " >
+                    <input type="text" class="form-control form-control-lg p-0 rounded-0 pl-2" id="cgpa">
+                </div>
+                <div class="col-4 p-0" id="inputdiv">
+                    <input type="button" class="btn-lg btn-block btn-info rounded-0" value="calculate" id="btn">
+                </div>
+            </div>
+            </div><br><!--2nd container ended-->
+            <div class="container" id="box1">
+                Background-color
+                <input type="color"  class="ml-2 mr-4" id="backcolor">
+                Text-color
+                <input type="color" class="ml-2" id="textcolor"><br><br>
+                <input type="text" class="ml-4 d-none" id="seecolorcode"><!--Hidden-->
+                <input type="text" class="ml-4 d-none" id="seetextcode"><!--Hidden-->
+            </div>
+            <script type="text/javascript">
+            //code for calculation
+            let sem1="SEM1";
+            document.getElementById('btn').addEventListener('click',calculate);
+            function calculate(){
+            let s1=3*document.getElementById('l1').value;
+            let s2=3*document.getElementById('l2').value;
+            let s3=3*document.getElementById('l3').value;
+            let s4=15*document.getElementById('l4').value;
+            let sum=((s1+s2+s3+s4)/24).toFixed(2);
+            document.getElementById('cgpa').value="SEM8  SGPA = " + sum;
+            }
+            //code for code picker
+            document.getElementById('backcolor').addEventListener('input',fun1);
+            document.getElementById('textcolor').addEventListener('input',fun2);
+            function fun1(){
+            let color=document.getElementById('backcolor').value;
+            document.getElementById('seecolorcode').value=color;
+            document.getElementById('template').style.backgroundColor=color;
+            }
+            function fun2(){
+            let color=document.getElementById('textcolor').value;
+            document.getElementById('seetextcode').value=color;
+            document.getElementById('template').style.color=color;
+            }
+            
+            </script>
+        </body>
+    </html>
